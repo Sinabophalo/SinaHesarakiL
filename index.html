@@ -5,41 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Moozahar</title>
 <style>
-  /* Reset */
   * { margin:0; padding:0; box-sizing:border-box; }
-
-  /* بک‌گراند ویدئو */
   body, html {
-    height: 100%;
-    width: 100%;
+    height: 100%; width: 100%;
     font-family: Arial, sans-serif;
     color: white;
     overflow: hidden;
     position: relative;
+    background: #000; /* رنگ بک‌گراند قبل لود ویدئو */
   }
 
+  /* بک‌گراند ویدئو */
   video#bgVideo {
-    position: fixed;
-    top:0; left:0;
-    width:100%;
-    height:100%;
+    position: fixed; top:0; left:0;
+    width:100%; height:100%;
     object-fit: cover;
     z-index: -1;
   }
 
-  /* پاپ‌آپ */
+  /* پاپ‌آپ کلیک */
   #popup {
-    position: fixed;
-    top:0; left:0;
-    width:100%;
-    height:100%;
+    position: fixed; top:0; left:0;
+    width:100%; height:100%;
     background: rgba(0,0,0,0.7);
-    display: flex;
-    align-items:center;
-    justify-content:center;
+    display: flex; align-items:center; justify-content:center;
     z-index: 10;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column; text-align: center;
   }
   #popup button {
     padding: 15px 30px;
@@ -57,8 +48,7 @@
   /* متن بالا */
   #title {
     position: absolute;
-    top: 50px;
-    width:100%;
+    top: 50px; width:100%;
     text-align:center;
     font-size: 48px;
     font-weight:bold;
@@ -68,39 +58,26 @@
   /* دکمه‌ها وسط صفحه */
   #buttons {
     position: absolute;
-    top: 50%;
-    left:50%;
+    top: 50%; left:50%;
     transform: translate(-50%, -50%);
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+    display:flex; flex-direction: column; align-items: center;
     gap: 20px;
   }
-  .row {
-    display:flex;
-    gap: 20px;
-  }
+  .row { display:flex; gap: 20px; }
   .btn {
     padding: 15px 25px;
     font-size: 18px;
-    border:none;
-    border-radius: 8px;
+    border:none; border-radius: 8px;
     background: rgba(0,0,0,0.6);
-    color:white;
-    cursor:pointer;
-    text-decoration: none;
-    transition:0.3s;
+    color:white; cursor:pointer;
+    text-decoration: none; transition:0.3s;
   }
   .btn:hover { background: rgba(255,69,0,0.8); }
 
   /* متن پایین */
   #footer {
-    position: absolute;
-    bottom: 20px;
-    width:100%;
-    text-align:center;
-    font-size: 14px;
-    color: #ccc;
+    position: absolute; bottom: 20px; width:100%;
+    text-align:center; font-size: 14px; color: #ccc;
   }
 
   @media (max-width:600px){
@@ -113,7 +90,7 @@
 
 <!-- بک‌گراند ویدئو -->
 <video id="bgVideo" autoplay muted loop>
-  <source src="https://uupload.ir/view/1765903999760_zcrt.mp4/" type="video/mp4">
+  <source src="background.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
@@ -142,7 +119,7 @@
 
 <!-- موزیک مخفی -->
 <audio id="bgMusic" loop>
-  <source src="https://uupload.ir/view/montagem_amostra_(feat._wxchsxn)_s7xh.m4a/" type="audio/m4a">
+  <source src="bgmusic.m4a" type="audio/m4a">
   Your browser does not support the audio element.
 </audio>
 
