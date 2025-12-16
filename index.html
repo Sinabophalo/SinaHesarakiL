@@ -12,10 +12,9 @@
     color: white;
     overflow: hidden;
     position: relative;
-    background: #000; /* رنگ بک‌گراند قبل لود ویدئو */
+    background: #000;
   }
 
-  /* بک‌گراند ویدئو */
   video#bgVideo {
     position: fixed; top:0; left:0;
     width:100%; height:100%;
@@ -23,7 +22,6 @@
     z-index: -1;
   }
 
-  /* پاپ‌آپ کلیک */
   #popup {
     position: fixed; top:0; left:0;
     width:100%; height:100%;
@@ -45,7 +43,6 @@
   }
   #popup button:hover { background:#ff6347; }
 
-  /* متن بالا */
   #title {
     position: absolute;
     top: 50px; width:100%;
@@ -55,7 +52,6 @@
     text-shadow: 2px 2px 10px #000;
   }
 
-  /* دکمه‌ها وسط صفحه */
   #buttons {
     position: absolute;
     top: 50%; left:50%;
@@ -74,7 +70,6 @@
   }
   .btn:hover { background: rgba(255,69,0,0.8); }
 
-  /* متن پایین */
   #footer {
     position: absolute; bottom: 20px; width:100%;
     text-align:center; font-size: 14px; color: #ccc;
@@ -88,22 +83,18 @@
 </head>
 <body>
 
-<!-- بک‌گراند ویدئو -->
 <video id="bgVideo" autoplay muted loop>
-  <source src="background.mp4" type="video/mp4">
+  <source src="Background.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
-<!-- پاپ‌آپ کلیک -->
 <div id="popup">
   <h2>برای ادامه کلیک کنید</h2>
   <button id="continueBtn">ادامه</button>
 </div>
 
-<!-- متن بالا -->
 <div id="title">Moozahar</div>
 
-<!-- دکمه‌ها وسط صفحه -->
 <div id="buttons">
   <div class="row">
     <a class="btn" href="https://t.me/TxSetyzz" target="_blank">Telegram</a>
@@ -114,12 +105,10 @@
   </div>
 </div>
 
-<!-- متن پایین -->
 <div id="footer">Designed by Sina Hesarki</div>
 
-<!-- موزیک مخفی -->
 <audio id="bgMusic" loop>
-  <source src="bgmusic.m4a" type="audio/m4a">
+  <source src="Bgmusic.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
